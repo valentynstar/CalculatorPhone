@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div class="calculator__container">
+        <div class="calculator__bg">
+            <div class="calculator__form">
+
+                <div class="calculator__form__header">
+                    <div class="calculator__form__header__time">
+                        <span class="calculator__form__header__time__hours"></span><span class="calculator__form__header__time__minutes"></span>
+                    </div>
+                    <div class="calculator__form__header__cap">
+                        <span><img src="img/iphone_header.png" alt="iphone-header"></span>
+                    </div>
+                    <div class="calculator__form__header__status">
+                        <span><i class="fa-solid fa-signal"></i></span>
+                        <span><i class="fas fa-wifi"></i></span>
+                        <span><i class="fa-solid fa-battery-full"></i></span>
+                    </div>
+                </div>
+
+                <div class="calculator__form__screen">
+                    <div class="calculator__form__screen__input__field__history"></div>
+                    <div class="calculator__form__screen__input__field">
+                        <input type="text" id="inputField" readonly>
+                    </div>
+                    <div class="calculator__form__screen__nums">
+                        <button data-value="CA" class="calculator__form__screen__nums__operators">CA</button>
+                        <button data-value="/" class="calculator__form__screen__nums__operators">/</button>
+                        <button data-value="*" class="calculator__form__screen__nums__operators">*</button>
+                        <button data-value="" class="calculator__form__screen__nums__delete calculator__form__screen__nums__operators"><i class="fa-solid fa-delete-left" data-value=""></i></button>
+
+                        <button data-value="7">7</button>
+                        <button data-value="8">8</button>
+                        <button data-value="9">9</button>
+                        <button data-value="-" class="calculator__form__screen__nums__operators">-</button>
+
+                        <button data-value="4">4</button>
+                        <button data-value="5">5</button>
+                        <button data-value="6">6</button>
+                        <button data-value="+" class="calculator__form__screen__nums__operators">+</button>
+
+                        <button data-value="1">1</button>
+                        <button data-value="2">2</button>
+                        <button data-value="3">3</button>
+                        <button data-value="%" class="calculator__form__screen__nums__operators">%</button>
+
+                        <button data-value=".">.</button>
+                        <button data-value="0">0</button>
+                        <button data-value="=" id="fieldEqual" class="calculator__form__screen__nums__operators">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/28ac68b54e.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
