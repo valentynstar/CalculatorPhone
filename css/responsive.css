@@ -12,15 +12,33 @@
         margin: 5px;
     }
     #inputField {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .calculator__form__screen__nums  {
-        gap: 10px;
+        gap: 5px;
+        padding: 0 40px;
     }
+    .calculator__form__screen__input__field  {
+        padding: 5px 40px;
+    }
+    .calculator__form__screen__nums button {
+        flex: 1 0 61px;
+        font-size: 22px;
+    }
+    .calculator__form__screen__input__field__history div {
+        padding: 0 40px;
+    }
+    
 }
 @media screen and (max-width: 425px) {
     .calculator__form__screen {
         top: 60px;
+    }
+    .calculator__form__screen__nums  {
+        padding: 0 26px;
+    }
+    #fieldEqual {
+        flex-grow: 6;
     }
 }
 @media screen and (max-width: 387px) {
@@ -40,10 +58,25 @@
     .calculator__form__screen__nums input{
         margin: 5px 0px;
     }
+    .calculator__form__screen__nums button {
+        flex: 1 0 55px;
+        font-size: 18px !important;
+    }
+    
 }
+
+@media screen and (max-width: 375px) {
+    .calculator__form__screen__nums button {
+        flex: 1 0 52px;
+    }
+}
+
 @media screen and (max-width: 367px) {
     .calculator__form__screen__nums {
         gap: 5px;
+    }
+    #inputField {
+        font-size: 22px;
     }
 } 
 @media screen and (max-width: 348px) {
@@ -57,7 +90,13 @@
         flex: 0 1 65px;
     }
 }
-
+@media screen and (max-width: 320px) {
+    .calculator__form__screen__nums button {
+        flex: 1 0 48px;
+        font-size: 14px !important;
+    }
+    
+}
 @media screen and (max-width: 280px){
     .calculator__form__screen__nums {
         gap: 0; 
