@@ -80,6 +80,9 @@
     }
 } 
 @media screen and (max-width: 348px) {
+    .calculator__form__header__cap span img {
+        width: 100px;
+    }
     .calculator__form__screen__nums input{
         margin: 0px;
     }
@@ -91,14 +94,36 @@
     }
 }
 @media screen and (max-width: 320px) {
+    .calculator__form__screen__nums  {
+        padding: 0 10px;;
+    }
     .calculator__form__screen__nums button {
         flex: 1 0 48px;
         font-size: 14px !important;
+    }
+    .calculator__form__screen__input__field {
+        padding: 5px 15px;
     }
     
 }
 @media screen and (max-width: 280px){
     .calculator__form__screen__nums {
-        gap: 0; 
+        gap: 1; 
+        padding: 0;
+    }
+    .calculator__form__screen__nums button {
+        padding: 14px;
+    }
+    .calculator__form__header__time {
+        font-size: 16px;
+    }
+    .calculator__form__header__status {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 235px) {
+    .calculator__form__header__cap span img {
+        width: 75px;
     }
 }
