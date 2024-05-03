@@ -5,6 +5,14 @@
     background-color: #B0C4DE;
     -webkit-tap-highlight-color: transparent;
 }
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+.visible {
+    display: none !important;
+    opacity: 1;
+}
 
 .calculator__container {
     width: 100vw;
@@ -77,9 +85,11 @@
 .calculator__form__screen {
     position: absolute;
     top: 100px;
-    right: 10px;
+    right: 0px;
     padding: 20px;
-    width: 380px;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .calculator__form__screen__input__field__history {
     text-align: right;
@@ -104,6 +114,7 @@
 .calculator__form__screen div button {
     cursor: pointer;
 } 
+.calculator__form__screen__nums__engineer,
 .calculator__form__screen__nums {
     /* display: flex;
     flex-wrap: wrap;
@@ -116,22 +127,38 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
+
+.calculator__form__screen__nums__engineer #fieldEqual {
+    grid-column: span 1; 
+}
 .calculator__form__screen__nums #fieldEqual {
     grid-column: span 2; 
 }
-.calculator__form__screen__nums button {
-    padding: 20px;
+.calculator__form__screen__nums__engineer button {
+    padding: 25px 20px;
     flex: 1 1 77px;
-    font-size: 26px;    
+    font-size: 18px;    
     transition: all 0.5s;
     border-radius: 25%;
     border: none;
     background-color: #0d67b0 !important;
     color: #e5e5e5;
 }
+.calculator__form__screen__nums button {
+    padding: 24px;
+    flex: 1 1 77px;
+    font-size: 20px;    
+    transition: all 0.5s;
+    border-radius: 25%;
+    border: none;
+    background-color: #0d67b0 !important;
+    color: #e5e5e5;
+}
+.calculator__form__screen__nums__engineer button:hover,
 .calculator__form__screen__nums button:hover {
     background-color: #08508b !important;
 }
+.calculator__form__screen__nums__engineer button:active,
 .calculator__form__screen__nums button:active {
     background-color: #06355c !important;
 }
@@ -151,4 +178,22 @@
 }
 .calculator__form__screen__nums__operators {
     color: #48D1CC !important;
+}
+.calculator__form__screen__switchmode {
+    margin: 20px 0;
+    padding: 10px;
+    
+    background: transparent;
+    color: white;
+    outline: none;
+    border-radius: 25%;
+    border: 2px solid #48D1CC;
+
+    text-transform: capitalize;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.calculator__form__screen__switchmode:hover {
+    background-color: #2a6ead;
+    transform: scale(1.1);
 }
